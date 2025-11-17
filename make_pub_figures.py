@@ -59,10 +59,10 @@ phiAss_num_ambA1 = []
 phiBfs_num_ambA1 = []
 phiBss_num_ambA1 = []
 ambA1s = []
-for file in os.listdir(f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA/'):
+for file in os.listdir(f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA/'):
 	if file[:2] == '1d' in file:
 		ambA = float(file.split('_m_0.t')[0].split('_')[-1])
-		data = np.loadtxt(f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA/' + file, delimiter=',')
+		data = np.loadtxt(f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA/' + file, delimiter=',')
 		phiA = data[:, 1]
 		phiB = data[:, 2]
 		ambA1s.append(ambA)
@@ -87,10 +87,10 @@ phiAss_num_ambA2 = []
 phiBfs_num_ambA2 = []
 phiBss_num_ambA2 = []
 ambA2s = []
-for file in os.listdir(f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA2/'):
+for file in os.listdir(f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA2/'):
 	if file[:2] == '1d' in file:
 		ambA = float(file.split('_m_0.t')[0].split('_')[-1])
-		data = np.loadtxt(f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA2/' + file, delimiter=',')
+		data = np.loadtxt(f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA2/' + file, delimiter=',')
 		phiA = data[:, 1]
 		phiB = data[:, 2]
 		ambA2s.append(ambA)
@@ -115,10 +115,10 @@ phiAss_num_ambA3 = []
 phiBfs_num_ambA3 = []
 phiBss_num_ambA3 = []
 ambA3s = []
-for file in os.listdir(f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA3/'):
+for file in os.listdir(f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA3/'):
 	if file[:2] == '1d' in file:
 		ambA = float(file.split('_m_0.t')[0].split('_')[-1])
-		data = np.loadtxt(f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA3/' + file, delimiter=',')
+		data = np.loadtxt(f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA3/' + file, delimiter=',')
 		phiA = data[:, 1]
 		phiB = data[:, 2]
 		ambA3s.append(ambA)
@@ -143,10 +143,10 @@ phiAss_num_nr = []
 phiBfs_num_nr = []
 phiBss_num_nr = []
 nrs = []
-for file in os.listdir(f'tune_nr/amc_profs_chi05_nrm0_tuned_lams9_tunenr/'):
+for file in os.listdir(f'amc_profs_chi05_nrm0_tuned_lams9_tunenr/'):
 	if file[:2] == '1d' in file:
 		nr = float(file.split('_m_0.t')[0].split('_')[-1])
-		data = np.loadtxt(f'tune_nr/amc_profs_chi05_nrm0_tuned_lams9_tunenr/' + file, delimiter=',')
+		data = np.loadtxt(f'amc_profs_chi05_nrm0_tuned_lams9_tunenr/' + file, delimiter=',')
 		phiA = data[:, 1]
 		phiB = data[:, 2]
 		nrs.append(nr)
@@ -567,9 +567,9 @@ def ax_plot_error(ax, error_act, error_eqm, K_A, color, lwm=2):
 
 
 
-files = [f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA_const_ambAKAA/1d_coexistence_profiles_2param_ambA_0.005_m_0.txt',
-		 f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA_const_ambAKAA/1d_coexistence_profiles_2param_ambA_0.010069_m_0.txt',
-		 f'tune_ambA/amc_profs_chi05_nrm0_tuned_lams9_tuneambA_const_ambAKAA/1d_coexistence_profiles_2param_ambA_0.02_m_0.txt']
+files = [f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA_const_ambAKAA/1d_coexistence_profiles_2param_ambA_0.005_m_0.txt',
+		 f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA_const_ambAKAA/1d_coexistence_profiles_2param_ambA_0.010069_m_0.txt',
+		 f'amc_profs_chi05_nrm0_tuned_lams9_tuneambA_const_ambAKAA/1d_coexistence_profiles_2param_ambA_0.02_m_0.txt']
 
 plt.figure(figsize=(6.4 / 1.5, 4.8 / 1.75))
 colors = ['tab:blue', 'tab:orange', 'tab:green']
